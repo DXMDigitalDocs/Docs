@@ -31,3 +31,10 @@ node_modules
 
 # Used for automated test results and metadata.
 tmp/
+
+# Visual Studio files (Windows)
+.vs/
+
+# Claude Code temporary files
+tmpclaude-*/
+.claude/
