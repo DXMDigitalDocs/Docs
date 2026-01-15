@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: DM BIM Submission
+title: DM BIM
 description: A Jekyll theme for documentation
 baseurl: "/DMDigitalConstructionDoc" # the subpath of your site, e.g. /blog
 url: "https://ibrahimfahdah.github.io/DMDigitalConstructionDoc" # the base hostname & protocol for your site, e.g. http://example.com
@@ -71,7 +71,7 @@ search_enabled: true
 search:
   # Split pages into sections that can be searched individually
   # Supports 1 - 6, default: 2
-  heading_level: 2
+  heading_level: 3
   # Maximum amount of previews per search result
   # Default: 3
   previews: 2
