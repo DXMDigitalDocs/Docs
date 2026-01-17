@@ -102,4 +102,16 @@ The theme is available as open source under the terms of the [MIT License](http:
 [use the template]: https://github.com/just-the-docs/just-the-docs-template/generate
 
 ## Run local
-bundle exec jekyll serve -b ""
+
+Install Ruby - Download and install Ruby+Devkit from RubyInstaller. Choose the version with Devkit (e.g., "Ruby+Devkit 3.2.x (x64)").
+
+During installation, make sure to check "Add Ruby executables to your PATH".
+
+After installation, open a new command prompt and run:
+
+
+gem install bundler
+Then in your project directory, run:
+bundle install
+
+bundle exec jekyll serve 
