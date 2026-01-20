@@ -2,7 +2,7 @@
 title: Information Requirements
 layout: default
 parent: DM BIM Submission
-nav_order: 1
+nav_order: 2
 ---
 
 # Info. requirements
