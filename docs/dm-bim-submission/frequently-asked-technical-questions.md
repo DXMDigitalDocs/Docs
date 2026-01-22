@@ -51,7 +51,7 @@ It is very important to submit the IFC models as required by the DM BIM standard
 
 > Figure below shows how to deal with a project with multiple buildings and when a building is made of multiple parts.
 
-<img src="{{ site.baseurl }}/assets/faq-media/image2.png" style="width:11.97778in;height:7.77638in" />
+<img src="{{ site.baseurl }}/assets/faq-media/image2.png" style="width:11.97778in;height:7.77638in" alt="screenshot" />
 
 Help Videos:
 
@@ -61,7 +61,7 @@ Help Videos:
 
 Yes, you must follow the DM level naming standard for the required levels in the model. However, after the level abbreviation and underscore you can use your own level identification.
 
-<img src="{{ site.baseurl }}/assets/faq-media/image3.png" style="width:5.27208in;height:1.75128in" />
+<img src="{{ site.baseurl }}/assets/faq-media/image3.png" style="width:5.27208in;height:1.75128in" alt="screenshot" />
 
 ### **Q9: Do we have to follow the DM BIM object naming conventions**
 
@@ -89,7 +89,7 @@ If you are sure the information doesn’t apply to an entity, you can place a de
 
 Appendix-C lists the building, unit and space usages. For Building and Spaces, the values of the highlighted attributes in the figure below should be filled in from the list defined in Appendix-C depending on each space usage.
 
-<img src="{{ site.baseurl }}/assets/faq-media/image5.png" style="width:11.98194in;height:3.63472in" />
+<img src="{{ site.baseurl }}/assets/faq-media/image5.png" style="width:11.98194in;height:3.63472in" alt="Appendix-C attributes for building and space usages" />
 
 ### **Q14: I am filling in the building, unit and space usages as per Appendix C, what should I do if I don't find the usage I am looking for in Appendix C?**
 
@@ -127,7 +127,7 @@ No. For building, unit and space usages, the DM BIM usages must be used as per A
 
 Parking slots should be exported to IfcSpace PARKING, for that you must map the parking family, if you are using Revit, to IfcSpace PARKING as shown below. A similar process may be used when using other authoring BIM tools.
 
-<img src="{{ site.baseurl }}/assets/faq-media/image6.png" style="width:8.94734in;height:5.52996in" />
+<img src="{{ site.baseurl }}/assets/faq-media/image6.png" style="width:8.94734in;height:5.52996in" alt="Revit IFC export settings for mapping parking family to IfcSpace PARKING" />
 
 ### **Q21: What should I do if the IFC files exported from my BIM model are too large?**
 
@@ -151,7 +151,7 @@ This typically happens when unneeded model elements such furniture and cosmetic 
 
 If you consider the gate level 'DMD' 3.05 m as ±0 as an example, you should place the project base point at the GA\_GateLevel level and set the project base point elevation to 3.05 m. You also need to set the GateLevel attribute required by the standard for the site as 3.05. With this, when you export the model to IFC, the IfcBuildingStorey for the GA\_GateLevel level will have a global Z value equal to 3.05m. Figure below shows how to change the elevation of the gate level to the DMD value when using Revit.
 
-<img src="{{ site.baseurl }}/assets/faq-media/image7.png" style="width:10.0023in;height:4.63648in" />
+<img src="{{ site.baseurl }}/assets/faq-media/image7.png" style="width:10.0023in;height:4.63648in" alt="Revit settings showing how to set gate level elevation to DMD value" />
 
 It is also recommended to place the internal origin at the GA\_GateLevel level and this will ensure the Global Z coordinate for the IfcSite in the IFC model equal to the gate level input. Check Question [‎](#_Ref177377693) for details.
 
@@ -173,7 +173,7 @@ Yes, you can export your Revit project to multiple IFC files without splitting y
 
 By default, rooms, areas, or spaces are exported even when the Export only elements visible in view is ticked. To exclude rooms, areas, or spaces that are not in the visible view from exporting, you need to select these elements and tick the “not export” attribute on these elements.
 
-<img src="{{ site.baseurl }}/assets/faq-media/image8.png" style="width:12in;height:7.625in" />
+<img src="{{ site.baseurl }}/assets/faq-media/image8.png" style="width:12in;height:7.625in" alt="Revit IFC export settings for exporting visible elements and spaces in 3D views" />
 
 ### **Q29: What information do I need to provide for a space that is part of a unit?**
 
@@ -197,12 +197,12 @@ If you are not able to find the right space usage from Appendix C. You can conta
 
 | Description | Illustration |
 |------------------------------------|------------------------------------|
-| When there is no false ceiling, the space height is to the lowest structural element point as shown in the image. | <img src="{{ site.baseurl }}/assets/faq-media/image10.png" style="width:5.34154in;height:2.78074in" /> |
-| When there is false ceiling, the space height to the lowest point of the bottom of false ceiling as shown in the image. | <img src="{{ site.baseurl }}/assets/faq-media/image10.2.png" style="width:5.31172in;height:3.02392in" /> |
+| When there is no false ceiling, the space height is to the lowest structural element point as shown in the image. | <img src="{{ site.baseurl }}/assets/faq-media/image10.png" style="width:5.34154in;height:2.78074in" alt="IfcSpace height without false ceiling - to structural slab" /> |
+| When there is false ceiling, the space height to the lowest point of the bottom of false ceiling as shown in the image. | <img src="{{ site.baseurl }}/assets/faq-media/image10.2.png" style="width:5.31172in;height:3.02392in" alt="IfcSpace height with false ceiling - to ceiling bottom" /> |
 
 ### **Q34: I am a bit confused on level naming, is there an illustration to show how this should be done?**
 
-<img src="{{ site.baseurl }}/assets/faq-media/image11.png" style="width:8.8738in;height:6.59166in" />
+<img src="{{ site.baseurl }}/assets/faq-media/image11.png" style="width:8.8738in;height:6.59166in" alt="Illustration of DM BIM level naming convention" />
 
 ### **Q35: I noticed that some elements in the IFC model are not hosted in the correct level. Is there a way to fix this issue?**
 
@@ -216,7 +216,7 @@ For the first case, the resolution is by identifying the affected elements in th
 
 For the second case, a parameter called ‘IfcSpatialContainer’ can be created as shown in the image below and set the parameter values of the affected elements to the desired level name.
 
-<img src="{{ site.baseurl }}/assets/faq-media/image12.png" style="width:12in;height:3.30556in" />
+<img src="{{ site.baseurl }}/assets/faq-media/image12.png" style="width:12in;height:3.30556in" alt="Creating IfcSpatialContainer parameter in Revit to fix element hosting" />
 
 ## **Submission Self-Assessment**
 
@@ -244,21 +244,21 @@ We noticed that in the Revit versions that we tested greyed out <u>Boolean prope
 
 Yes. The IFC files for the BIM submission should include only the GA\_GateLevel and RD\_RoadLevel and the floor levels. You don’t need to delete other levels in the BIM model that are not required for submission. If you are using Revit, you can switch off the ‘BuildingStorey’ tickbox under the level and this will keep the level in the model but it will not be exported in the IFC model. The figure below shows how a level can be switched off for IFC exporting.
 
-<img src="{{ site.baseurl }}/assets/faq-media/image14.png" style="width:9.46382in;height:5.07694in" />
+<img src="{{ site.baseurl }}/assets/faq-media/image14.png" style="width:9.46382in;height:5.07694in" alt="Revit level properties showing BuildingStorey checkbox to exclude levels from IFC export" />
 
 ### **Q40:** <span id="_Ref177377693" class="anchor"></span>**I checked my IFC files in a desktop IFC viewer and I see that IFC Site Z value is different from the Z value of the GA\_GateLevel level, Is this an issue?**
 
 No, this is not an issue to worry about. When exporting BIM models from Revit to IFC, the IfcSite location is derived from the internal origin’s location. To ensure that the elevation value (Z) of the IfcSite matches the Z value of the GA\_GateLevel level, you need to place the GA\_GateLevel level at the internal origin at the start of the modeling process, as the internal origin point cannot be moved like other points (See the screenshot below).
 
-<img src="{{ site.baseurl }}/assets/faq-media/image15.png" style="width:9.24404in;height:1.46742in" />
+<img src="{{ site.baseurl }}/assets/faq-media/image15.png" style="width:9.24404in;height:1.46742in" alt="Revit internal origin placement at GA_GateLevel" />
 
 However, if the above is followed and then there has been any change to the gate level elevation, the Z values will not match when exporting to IFC file. Still, this is not an issue as it is mentioned above, just something to keep in mind.
 
 The figures below shows the Z values of the IfcSite and the GA\_GateLevel level in the IFC file match when the level and the internal origin’s location coincides.
 
-<img src="{{ site.baseurl }}/assets/faq-media/image16.png" style="width:8.02426in;height:2.49366in" />
+<img src="{{ site.baseurl }}/assets/faq-media/image16.png" style="width:8.02426in;height:2.49366in" alt="screenshot" />
 
-<img src="{{ site.baseurl }}/assets/faq-media/image17.png" style="width:6.93406in;height:4.10506in" />
+<img src="{{ site.baseurl }}/assets/faq-media/image17.png" style="width:6.93406in;height:4.10506in" alt="screenshot" />
 
 ### **Q41: The QA/QC app reports many critical issues. What could be the issues in the BIM models?**
 
@@ -296,7 +296,7 @@ There are different reasons why this might be the case. In general, we expect to
 
 First and for most you need to check that the files are named correctly as per the file naming convention section in **DubaiBuildingPermitBIMStandards.pdf.** If the files don’t follow the standard convention section, you will get an error when trying to upload the files to the platform. If the files are correctly named, you need to zip them in a single zip file and make sure the files are not in a sub folder and the file size is less than the max allowed. The zip file name should follow the instruction on the upload dialog as shown below.
 
-<img src="{{ site.baseurl }}/assets/faq-media/image20.png" style="width:5.68704in;height:5.56988in" />
+<img src="{{ site.baseurl }}/assets/faq-media/image20.png" style="width:5.68704in;height:5.56988in" alt="screenshot" />
 
 ### **Q48: Should my BIM submission include any other files besides the IFC models?**
 
@@ -306,7 +306,7 @@ No. We only ask for the IFC models. In some cases, we may ask you to include an 
 
 When you upload the zip file which contains the IFC files two things will happen. During the upload phase and before processing the IFC models, the file naming convention is checked. If you see an error during the upload step, then it is most likely an issue related to the zip file. On the other hand, if an error happens during the file processing, then it is something with the model itself. Check file naming convention section in **DubaiBuildingPermitBIMStandards.pdf**
 
-<img src="{{ site.baseurl }}/assets/faq-media/image21.png" style="width:7.38728in;height:4.21564in" />
+<img src="{{ site.baseurl }}/assets/faq-media/image21.png" style="width:7.38728in;height:4.21564in" alt="screenshot" />
 
 For issues during the upload phase, please make sure the IFC files are not in a sub folder inside the zip file and the file names follow the standard. For issues during model processing, you can contact the support team for help if you cannot find the root cause.
 
@@ -314,7 +314,7 @@ For issues during the upload phase, please make sure the IFC files are not in a 
 
 Once the model is uploaded and processed successfully, you can review the model in the BIM platform by clicking on the ‘Open BIM Viewer’ button.
 
-<img src="{{ site.baseurl }}/assets/faq-media/image22.png" style="width:12in;height:2.87638in" />
+<img src="{{ site.baseurl }}/assets/faq-media/image22.png" style="width:12in;height:2.87638in" alt="screenshot" />
 
 ### **Q51:** <span id="_Ref177041253" class="anchor"></span>**I successfully uploaded my IFC models to the DM BIM platform, what I should do next?**
 
@@ -368,7 +368,7 @@ See Question [‎](#_Ref177041253).
 
 Once you have uploaded the IFC model to the platform, go to the Map tab and select "View Setbacks." If the building footprint falls within the parcel boundary, this indicates that your model is correctly geolocated in the X and Y directions. For the Z elevation, check the elevation value of each IfcBuildingStorey in reference to the DMD value. In the figure below, the red lines are the parcel boundary and the blue lines are the building blocks.
 
-<img src="{{ site.baseurl }}/assets/faq-media/image23.png" style="width:5.90338in;height:5.08634in" />
+<img src="{{ site.baseurl }}/assets/faq-media/image23.png" style="width:5.90338in;height:5.08634in" alt="screenshot" />
 
 ### **Q55: I reviewed the e-checking results, but I think there are few false positive errors, should I worry?**
 
