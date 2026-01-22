@@ -36,6 +36,6 @@ jobs:
       - name: Build Site
         run: bundle exec jekyll build
       - name: Test with html-proofer
-        run: bundle exec htmlproofer _site --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/" --disable-external
+        run: bundle exec htmlproofer _site --swap-urls "^/site/:/" --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/" --disable-external
         env:
           NOKOGIRI_USE_SYSTEM_LIBRARIES: true
