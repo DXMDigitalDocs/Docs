@@ -68,9 +68,9 @@ Below are a few videos that demonstrate exporting models from Revit to IFC
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=ctZKf8_lhpvuVyjI&amp;list=PLUIgjxgKOw-oDEW17jiZmjbxqn5p6dTde" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 
-
   <div class="video-item">
-    <h6>Revit to IFC - The Ultimate Guide</h6>
-    <iframe src="https://www.youtube.com/embed/Z_l87YSqw3s" frameborder="0" allowfullscreen></iframe>
+    <h6>Export any Revit property to IFC using custom Property Sets</h6>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/SswHKtcM3mI?si=RgQWBTP9eEQyV4nJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
+
 </div>
